@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.bican.org/taxonomy/CCN202204130
+
+idspace: CCN202204130
+base_url: /taxonomy/CCN202204130
+
+products:
+- CCN202204130.json: https://raw.githubusercontent.com/hkir-dev/human_m1/main/CCN202204130.json
+
+base_redirect: https://github.com/hkir-dev/human_m1
+
+entries:
+
+# http://purl.bican.org/taxonomy/CCN202204130/CCN202204130.json
+- exact: /CCN202204130.json
+  replacement: https://raw.githubusercontent.com/hkir-dev/human_m1/main/CCN202204130.json
