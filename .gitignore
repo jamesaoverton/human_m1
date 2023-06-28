@@ -1,3 +1,4 @@
+build/
 nanobot
 .nanobot.db*
 .venv/
