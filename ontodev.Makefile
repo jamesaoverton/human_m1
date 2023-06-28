@@ -226,5 +226,5 @@ reload: save load_ontology
 
 .PHONY: droid
 droid:
-	cd /tools/droid  \
-	java -jar droid-standalone.jar
+	cd /tools/droid && java -jar droid-standalone.jar --verbose
+
