@@ -1,6 +1,6 @@
 WORKSPACE=/tools
 NANOBOT := build/nanobot
-NANOBOTDB := .nanobot.db
+NANOBOTDB := build/nanobot.db
 EXPORT := build/export.py
 
 build/:
@@ -8,6 +8,7 @@ build/:
 
 build/nanobot: build/
 	curl -L -o $@ "https://github.com/ontodev/nanobot.rs/releases/download/v2023-06-23/nanobot-x86_64-unknown-linux-musl"
+	chmod +x $@
 
 build/export.py: | build/
 	curl -L -o $@ "https://github.com/ontodev/valve.rs/raw/main/scripts/export.py"
@@ -20,11 +21,11 @@ build_nomenclature_tables:
 runR:
 	Rscript dendR/nomenclature_builder.R
 
-$(NANOBOTDB): $(NANOBOT)
+$(NANOBOTDB): | $(NANOBOT)
 	$(NANOBOT) init
 
 .PHONY: load
-load: clean
+load: clean | $(NANOBOT)
 	$(NANOBOT) init
 
 .PHONY:
@@ -38,4 +39,4 @@ serve: $(NANOBOTDB)
 
 .PHONY: clean
 clean:
-	rm -f $(NANOBOTDB)*
+	rm -rf build/

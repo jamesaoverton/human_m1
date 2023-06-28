@@ -4,6 +4,9 @@ config_version = 1
 [logging]
 level = "DEBUG"
 
+[database]
+connection = "build/nanobot.db"
+
 [valve]
 path = "src/schema/table.tsv"
 
