@@ -13,7 +13,7 @@ path = "src/resources/"
 [actions.save]
 label = "Save"
 commands = [
-  ["echo", "Not yet implemented"],
+  ["make", "save"],
 ]
 
 [actions.status]
