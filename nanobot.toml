@@ -88,15 +88,8 @@ inputs = [
   { name = "tag", label = "Release Tag", default = "v{today}" },
 ]
 commands = [
+  ["git", "checkout", "main"],
+  ["git", "pull"],
+  ["git", "-c", "color.ui=always", "status"],
   ["gh", "release", "create", "--tag", "'{tag}'"],
-]
-
-[actions.echo]
-label = "Echo"
-inputs = [
-  {name = "first", label = "First", default = "FIRST"},
-  {name = "second", label = "Second", placeholder = "SECOND"},
-]
-commands = [
-  ["echo", "{first} foo {second}"],
 ]
