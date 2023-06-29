@@ -1,9 +1,9 @@
-table	path	description	type
-CCN202204130	curation_tables/CCN202204130.tsv		
-CCN202204130_config	curation_tables/CCN202204130_config.tsv		
-CCN202204130_taxonomy	curation_tables/CCN202204130_taxonomy.tsv		
-CCN202204130_cross_taxonomy	curation_tables/CCN202204130_cross_taxonomy.tsv		
-CCN202204130_location_mapping	curation_tables/CCN202204130_location_mapping.tsv		
-table	src/schema/table.tsv	All of the user-editable tables in this project.	table
-column	src/schema/column.tsv	Columns for all of the tables.	column
-datatype	src/schema/datatype.tsv	Datatypes for all of the columns	datatype
+table	path	type	edit_view	description
+CCN202204130	curation_tables/CCN202204130.tsv			
+CCN202204130_config	curation_tables/CCN202204130_config.tsv			
+CCN202204130_taxonomy	curation_tables/CCN202204130_taxonomy.tsv			
+CCN202204130_cross_taxonomy	curation_tables/CCN202204130_cross_taxonomy.tsv		cross_taxonomy	
+CCN202204130_location_mapping	curation_tables/CCN202204130_location_mapping.tsv			
+table	src/schema/table.tsv	table		All of the user-editable tables in this project.
+column	src/schema/column.tsv	column		Columns for all of the tables.
+datatype	src/schema/datatype.tsv	datatype		Datatypes for all of the columns

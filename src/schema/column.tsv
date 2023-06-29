@@ -2,6 +2,7 @@ table	column	label	nulltype	datatype	structure	description
 table	table			table_name	unique	name of this table
 table	path			path		path to the TSV file for this table, relative to the table.tsv file
 table	type		empty	table_type		type of this table, used for tables with special meanings
+table	edit_view		empty	word		the name of a custom view for editing this table
 table	description		empty	description		a description of this table
 column	table			table_name	from(table.table)	the table that this column belongs to
 column	column			column_name		the name of this column
@@ -38,12 +39,12 @@ CCN202204130_taxonomy	brain_region_name		empty	text
 CCN202204130_taxonomy	assay_id		empty	text		
 CCN202204130_taxonomy	assay_name		empty	text		
 CCN202204130_taxonomy	Provenance		empty	text		
-CCN202204130_cross_taxonomy	cell_set_accession		empty	text		
-CCN202204130_cross_taxonomy	cell_type_name		empty	text		
-CCN202204130_cross_taxonomy	mapped_cell_set_accession		empty	text		
-CCN202204130_cross_taxonomy	mapped_cell_type_name		empty	trimmed_line		
-CCN202204130_cross_taxonomy	evidence_comment		empty	text		
-CCN202204130_cross_taxonomy	similarity_score		empty	trimmed_line		
+CCN202204130_cross_taxonomy	cell_set_accession	cell set accession	empty	text		
+CCN202204130_cross_taxonomy	cell_type_name	cell type name	empty	text		
+CCN202204130_cross_taxonomy	mapped_cell_set_accession	mapped cell set accession	empty	text		
+CCN202204130_cross_taxonomy	mapped_cell_type_name	mapped cell type name	empty	trimmed_line		
+CCN202204130_cross_taxonomy	evidence_comment	evidence comment	empty	text		
+CCN202204130_cross_taxonomy	similarity_score	similarity score	empty	trimmed_line		
 CCN202204130_cross_taxonomy	provenance		empty	text		
 CCN202204130_location_mapping	cell_set_accession			word	primary	
 CCN202204130_location_mapping	cell_type_name			ontology_label		
