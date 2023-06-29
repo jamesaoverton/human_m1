@@ -18,14 +18,14 @@ datatype	description		empty	text		a description of this datatype
 datatype	SQLite type		empty	sql_type		the SQL type for representing this data in SQLite
 datatype	PostgreSQL type		empty	sql_type		the SQL type for representing this data in PostgreSQL
 datatype	HTML type		empty	html_type		the HTML type for viewing and editing this data
-CCN202204130	cell_set_accession			word	primary	
-CCN202204130	cell_type_name			ontology_label		
-CCN202204130	parent_cell_set_accession		empty	text		
-CCN202204130	synonyms		empty	text		
-CCN202204130	synonym_provenance		empty	text		
-CCN202204130	classifying_ontology_term_id		empty	autocomplete_cl		
-CCN202204130	classifying_ontology_term_name		empty	text		
-CCN202204130	classification_provenance		empty	text		
+CCN202204130	cell_set_accession	cell set accession		word	primary	
+CCN202204130	cell_type_name	cell type name		ontology_label		
+CCN202204130	parent_cell_set_accession	parent cell set accession	empty	word		
+CCN202204130	synonyms	synonyms	empty	text		
+CCN202204130	synonym_provenance	synonym provenance	empty	text		
+CCN202204130	classifying_ontology_term_id	classifying ontology term id	empty	autocomplete_cl		
+CCN202204130	classifying_ontology_term_name	classifying ontology term name	empty	ontology_label		
+CCN202204130	classification_provenance	classification provenance	empty	text		
 CCN202204130	rank		empty	cell_type		
 CCN202204130_config	Source			word	primary	
 CCN202204130_config	IRI			IRI		

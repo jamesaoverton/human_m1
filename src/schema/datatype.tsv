@@ -21,7 +21,7 @@ nonspace	trimmed_line		exclude(/\s/)		text without whitespace
 obsolescence_reason	ontology_label		in('failed exploratory term', 'placeholder removed', 'term imported', 'term split', 'terms merged')		the IAO obsolescence reason for term deprecation			search
 obsolete_class	ontology_label		in('Obsolete Class')		the 'Obsolete Class' parent for all deprecated terms			search
 ontology_id	nonspace		match(/\w+:\w+/)		CURIE that does not begin or end with whitespace			
-ontology_label	trimmed_text		match(/[^\s]+.+[^\s]/)		label that does not begin or end with whitespace			
+ontology_label	trimmed_text		match(/[^\s]+.+[^\s]/)		label that does not begin or end with whitespace			text
 owl_type	word		in('owl:AnnotationProperty', 'owl:Class', 'owl:ObjectProperty')		an OWL entity type: owl:AnnotationProperty, owl:Class, or owl:ObjectProperty			search
 path	line		exclude(/\\\\\\\n/)		a path to a file			
 positive_integer	nonspace		match(/\d+/)		a positive integer	INTEGER	INTEGER	number
