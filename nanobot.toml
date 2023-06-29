@@ -10,6 +10,9 @@ connection = "build/nanobot.db"
 [valve]
 path = "src/schema/table.tsv"
 
+[assets]
+path = "src/assets/"
+
 [templates]
 path = "src/resources/"
 
