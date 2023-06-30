@@ -1,6 +1,8 @@
 {% extends "page.html" %}
 
 {% block head_end %}
+<link rel="stylesheet" href="{{ page.root }}assets/styles.css" />
+<link rel="stylesheet" href="{{ page.root }}assets/bstreeview.css" />
 {% endblock %}
 
 {% block content %}
@@ -95,4 +97,5 @@
 {% endblock %}
 
 {% block body_end %}
+<script src="{{ page.root }}assets/bstreeview.js"></script>
 {% endblock %}
